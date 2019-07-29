@@ -6,18 +6,22 @@
 
 :root {
     --grey-black: #515151;
+    --main-yellow: #FFC53D;
+    --main-orange: #FF9A3D;
 }
 
 #wrapper {
-    width: 1200px;
+    width: 100vw;
+    min-width: 1000px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 /* Navigation bar */
 
 #navbar {
-    margin-top: 48px;
-    margin-bottom: 15px;
+    padding-top: 48px;
+    height: 50px;
 }
 
 #navbar #logo h5,
@@ -29,6 +33,7 @@
 
 #navbar #logo {
     float: left;
+    padding-left: 5%;
 }
 
 #navbar #logo h5 {
@@ -48,6 +53,7 @@
 
 #navbar ul {
     float: right;
+    padding-right: 5%;
 }
 
 #navbar ul li {
@@ -60,3 +66,56 @@
     text-decoration: none;
     color: var(--grey-black);
 }
+
+/* HEADER */
+
+#hero {
+    height: 585px;
+    width: 100%;
+    background-image: url(../imgs/cover-photo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#hero>* {
+    text-align: center;
+    font-weight: bold;
+}
+
+#hero h1 {
+    font-size: 100px;
+    color: var(--main-yellow);
+    padding-top: 13%;
+}
+
+#hero h2 {
+    font-size: 36px;
+    padding: 1.5% 0;
+    color: #fff;
+}
+
+#hero p {
+    font-size: 20px;
+    color: var(--main-orange);
+    font-weight: normal;
+}
+
+#hero .fab {
+    margin: 15px 15px;
+    padding: 5px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: #fff;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+}
+
+#hero .fa-github {
+    transform: scale(1.5);
+    padding: 0;
+    background-color: var(--main-orange);
+    color: #fff;
+}
+
+/* add layer !! */
