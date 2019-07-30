@@ -9,6 +9,7 @@
     --main-yellow: #FFC53D;
     --main-orange: #FF9A3D;
     --text-black: #222;
+    --background-white: #FAFAFF;
 }
 
 #wrapper {
@@ -32,24 +33,16 @@
     color: var(--grey-black);
 }
 
+#navbar #logo h5 {
+    line-height: 28px;
+    letter-spacing: 0.15;
+    float: left;
+}
+
 #navbar #logo {
     float: left;
     padding-left: 5%;
-}
-
-#navbar #logo h5 {
     font-size: 24px;
-}
-
-#dev-icon .fa-desktop {
-    font-size: 30px;
-}
-
-#dev-icon .fa-code {
-    font-size: 15px;
-    position: relative;
-    top: -7px;
-    left: -27px;
 }
 
 #navbar ul {
@@ -80,8 +73,8 @@
 }
 
 #hero h1,
-h2,
-p {
+#hero h2,
+#hero p {
     text-align: center;
     font-weight: bold;
     position: relative;
@@ -170,4 +163,97 @@ p {
     text-align: center;
     font-style: normal;
     font-weight: bold;
+}
+
+/* ABOUT ME */
+#about-me {
+    position: relative;
+}
+
+#about-back-rectangle {
+    width: 68%;
+    height: 430px;
+    background-color: var(--background-white);
+}
+
+#about-back-rectangle h3 {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    padding-top: 20px;
+    padding-left: 150px;
+}
+
+#about-front-rectangle {
+    position: absolute;
+    top: 75px;
+    left: 100px;
+    height: 220px;
+    width: 85%;
+    padding: 30px 50px 30px 50px;
+    background-color: #fff;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns: 15% 30% 55%;
+}
+
+#person-img {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#personal-details {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 160.86%;
+    color: var(--text-black);
+
+    border-right: dotted var(--main-orange) 4px;
+}
+
+.details {
+    color: var(--main-yellow);
+    padding-left: 5px;
+}
+
+.details#email {
+    text-decoration: underline;
+}
+
+#about-paragraph {
+    font-size: 18px;
+    line-height: 172.35%;
+    /* or 31px */
+    letter-spacing: 0.04em;
+    margin-left: 20px;
+}
+
+/* SKILLS */
+
+#skills {
+    margin-top: 50px;
+}
+
+#skills-front-rectangle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 280px;
+
+    text-align: center;
+}
+
+#skills-front-rectangle p {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+#skills-front-rectangle .pyellow {
+    font-weight: bold;
+    color: var(--main-yellow);
 }
