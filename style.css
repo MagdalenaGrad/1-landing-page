@@ -8,6 +8,7 @@
     --grey-black: #515151;
     --main-yellow: #FFC53D;
     --main-orange: #FF9A3D;
+    --text-black: #222;
 }
 
 #wrapper {
@@ -132,4 +133,41 @@ p {
     top: 0;
     position: absolute;
     opacity: 0.2;
+}
+
+/* RECTANGLE */
+
+#rectangle {}
+
+#rectangle p {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--text-black);
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    margin-top: 38px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.rec-buttons {
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    border: none;
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    margin: 50px 40px;
+
+    /* button text */
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
 }
