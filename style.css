@@ -13,7 +13,7 @@
 #wrapper {
     width: 100vw;
     min-width: 1000px;
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -75,11 +75,15 @@
     background-image: url(../imgs/cover-photo.png);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
-#hero>* {
+#hero h1,
+h2,
+p {
     text-align: center;
     font-weight: bold;
+    position: relative;
 }
 
 #hero h1 {
@@ -119,3 +123,13 @@
 }
 
 /* add layer !! */
+#overlay {
+    background-image: url(../imgs/hero-layer.png);
+    background-size: cover;
+    background-blend-mode: lighten;
+    height: 585px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    opacity: 0.2;
+}
