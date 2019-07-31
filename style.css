@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: "Raleway", sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -37,12 +38,13 @@
     line-height: 28px;
     letter-spacing: 0.15;
     float: left;
+    font-size: 24px;
+    padding-left: 1%;
 }
 
-#navbar #logo {
+#navbar #logo img {
     float: left;
     padding-left: 5%;
-    font-size: 24px;
 }
 
 #navbar ul {
@@ -116,7 +118,7 @@
     color: #fff;
 }
 
-/* add layer !! */
+/* add a layer !! */
 #overlay {
     background-image: url(../imgs/hero-layer.png);
     background-size: cover;
@@ -268,7 +270,7 @@
     margin: 0 7.5% 200px;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1.5fr 1fr;
 
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
     background-color: #fff;
