@@ -302,7 +302,6 @@
 #portfolio-gallery {
     width: 100%;
     height: 700px;
-    background-color: aquamarine;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -346,4 +345,168 @@
 
     background-image: url(imgs/pic5-room.png);
     background-position: center;
+}
+
+/* CONTACT FORM */
+
+section#contact {
+    background-color: var(--background-white);
+    padding: 50px;
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 0.02em;
+
+    color: #222222;
+}
+
+#contact-form {
+    width: 85%;
+    margin: 50px 7.5%;
+    display: flex;
+    height: 80%;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* orange field */
+
+#form-info {
+    background-color: var(--main-orange);
+    color: white;
+    font-size: 18px;
+    width: 40%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+#form-info::after {
+    content: " ";
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-orange);
+    transform: rotate(45deg);
+    position: absolute;
+    right: -25px;
+    top: 40px;
+
+}
+
+#please-describe {
+    font-family: Raleway;
+    line-height: 172.35%;
+    width: 70%;
+    margin-top: 5%;
+}
+
+#socials .fab {
+    margin-right: 15px;
+    padding: 5px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: #fff;
+    color: var(--main-orange);
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+}
+
+#socials .fa-github {
+    transform: scale(1.9);
+    background-color: var(--main-orange);
+    color: #fff;
+}
+
+#p-footer-bold {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    margin-top: 10px;
+}
+
+#p-footer-normal {
+    font-family: "Ubuntu";
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+}
+
+#footer-email {
+    text-decoration: underline;
+}
+
+/* form */
+
+#form-panel {
+    width: 60%;
+}
+
+form {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10%;
+}
+
+form legend {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 172.35%;
+    /* or 62px */
+    letter-spacing: 0.04em;
+}
+
+form input,
+form textarea {
+    background-color: var(--background-white);
+    border-radius: 15px;
+    border: inset;
+}
+
+form input {
+    height: 55px;
+}
+
+form textarea {
+    height: 180px;
+}
+
+[placeholder] {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+
+    color: #A0A0A0;
+    padding-left: 5%;
+}
+
+#send-button {
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* FOOTER */
+
+#footer-pagebottom {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #A0A0A0;
+    margin: 50px auto;
 }
