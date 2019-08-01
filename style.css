@@ -521,3 +521,36 @@ form textarea {
 }
 
 /* MEDIA QUERIES */
+
+/* S */
+@media (max-width: 767px) {
+
+    /* nav menu */
+
+    #navbar {
+        min-height: 200px;
+        max-height: 400px;
+        float: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+/* M */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    nav ul li a {
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+/* L */
