@@ -13,6 +13,20 @@
     --background-white: #FAFAFF;
 }
 
+@keyframes navanimation {
+    25% {
+        color: var(--main-orange);
+    }
+
+    50% {
+        color: var(--main-yellow);
+    }
+
+    75% {
+        color: var(--main-orange);
+    }
+}
+
 #wrapper {
     max-width: 1440px;
     margin: 0 auto;
@@ -307,7 +321,8 @@
 
 #portfolio-gallery {
     width: 100%;
-    height: 700px;
+    min-height: 600px;
+    max-height: 100vh;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -351,6 +366,41 @@
 
     background-image: url(imgs/pic5-room.png);
     background-position: center;
+}
+
+/* portfolio layer */
+
+.portfolio-layer {
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
+    height: 100%;
+    color: #fff;
+    display: none;
+}
+
+.portfolio-layer-h3,
+.portfolio-layer-p {
+    padding-left: 5%;
+}
+
+.portfolio-layer-h4 {
+    display: inline-block;
+}
+
+.portfolio-layer-p {
+    padding-top: 10px;
+    font-size: 16px;
+    max-width: 70%;
+}
+
+.portfolio-btn {
+    margin: 5% 0 0 5%;
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    border-radius: 15px;
 }
 
 /* CONTACT FORM */
@@ -517,13 +567,29 @@ form textarea {
     margin: 50px auto;
 }
 
-/* HOVER */
+/* HOVER STATE */
 
 .btn:hover {
     background: #fff;
     border: 1px solid var(--main-orange);
     color: var(--main-orange);
     box-sizing: border-box;
+}
+
+.tile-1:hover .portfolio-layer,
+.tile-5:hover .portfolio-layer {
+    display: block;
+}
+
+.portfolio-btn:hover {
+    background: #fff;
+    color: var(--main-orange);
+    border: solid 2px var(--main-orange);
+}
+
+#navbar ul li a:hover {
+    animation: navanimation 3s infinite;
+    text-decoration: underline;
 }
 
 /* MEDIA QUERIES */
@@ -665,6 +731,26 @@ form textarea {
         max-height: 500px;
     }
 
+    .portfolio-layer {
+        display: block;
+    }
+
+    .portfolio-layer-p {
+        font-size: 12px;
+    }
+
+    .portfolio-layer-h4 {
+        font-size: 12px;
+    }
+
+    .portfolio-btn {
+        width: 50px;
+        height: 25px;
+        border-radius: 8px;
+    }
+
+
+
     .tile-1 {
         grid-column: 1/ span 5;
         grid-row: 1/2;
@@ -788,6 +874,19 @@ form textarea {
         height: auto;
         min-height: 400px;
         max-height: 700px;
+    }
+
+    .portfolio-layer-h4 {
+        font-size: 14px
+    }
+
+    .portfolio-layer-p {
+        font-size: 12px
+    }
+
+    .portfolio-btn {
+        width: 75px;
+        height: 40px;
     }
 
     /* contact form */
