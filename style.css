@@ -533,14 +533,12 @@ form textarea {
 
     /* nav menu */
 
-    #wrapper {
-        margin: 0 auto;
-    }
-
     #navbar {
         min-height: 150px;
         max-height: 400px;
         float: none;
+        display: flex;
+        justify-content: center;
     }
 
     #logo {
@@ -696,6 +694,7 @@ form textarea {
 
     #contact-form {
         flex-direction: column;
+        margin-bottom: 0px;
     }
 
     #form-info,
@@ -718,16 +717,125 @@ form textarea {
     form legend {
         font-size: 20px;
     }
-}
 
-/*  */
+    /* footer */
+    #footer-pagebottom {
+        margin: 25px auto;
+    }
+}
 
 /* M */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    nav ul li a {
-        font-family: 'Times New Roman', Times, serif;
+    /* rec */
+
+    #rectangle p {
+        font-size: 24px;
+        margin-top: 5%;
+    }
+
+    .rec-buttons {
+        margin: 20px 50px;
+    }
+
+    /* about me */
+    #person-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #personal-details {
+        font-size: 16px;
+    }
+
+    #about-front-rectangle {
+        height: auto;
+    }
+
+    #about-paragraph {
+        font-size: 16px;
+    }
+
+    /* skills */
+
+    #skills-back-rectangle {
+        height: 300px;
+    }
+
+    #skills-front-rectangle {
+        height: auto;
+    }
+
+    #skills-front-rectangle p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .skill {
+        margin: 25px;
+    }
+
+    .skill img {
+        width: 50%;
+    }
+
+    #frontend p {
+        padding: 0 20px;
+    }
+
+    /* portfolio */
+    #portfolio-gallery {
+        height: auto;
+        min-height: 400px;
+        max-height: 700px;
+    }
+
+    /* contact form */
+
+    section#contact {
+        width: 95%;
+        padding-bottom: 15;
+    }
+
+    #contact-form {
+        width: 100%;
+        margin: 50px auto 0;
+    }
+
+    #form-info {
+        font-size: 16px;
+    }
+
+    #form-info::after {
+        width: 30px;
+        height: 30px;
+        right: -15px;
+    }
+
+    form legend {
+        font-size: 26px;
+    }
+
+    form input,
+    form textarea {
+        border-radius: 10px;
+    }
+
+    form input {
+        height: 35px;
+    }
+
+    form textarea {
+        height: 120px;
+    }
+
+    [placeholder] {
+        font-size: 14px;
+    }
+
+    /* footer */
+
+    #footer-pagebottom {
+        margin: 25px auto;
     }
 }
-
-/* L */
