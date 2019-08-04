@@ -377,13 +377,15 @@
     display: none;
 }
 
-.portfolio-layer-h3,
+.portfolio-layer-h4,
 .portfolio-layer-p {
     padding-left: 5%;
 }
 
 .portfolio-layer-h4 {
     display: inline-block;
+    font-size: 26px;
+    margin-top: 10px;
 }
 
 .portfolio-layer-p {
@@ -748,8 +750,6 @@ form textarea {
         height: 25px;
         border-radius: 8px;
     }
-
-
 
     .tile-1 {
         grid-column: 1/ span 5;
