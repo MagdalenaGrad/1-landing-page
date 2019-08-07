@@ -26,6 +26,7 @@
     75% {
         color: var(--main-orange);
     }
+
 }
 
 #wrapper {
@@ -127,11 +128,10 @@
 #hero .fa-github {
     transform: scale(1.5);
     padding: 0;
-    background-color: var(--main-orange);
     color: #fff;
+    background-color: var(--main-orange);
 }
 
-/* add a layer !! */
 #overlay {
     background-image: url(imgs/hero-layer.png);
     background-size: cover;
@@ -211,7 +211,6 @@
 }
 
 #about-front-rectangle {
-    /* position: absolute; */
     top: 75px;
     height: 220px;
     margin: 0 auto;
@@ -252,7 +251,6 @@
 #about-paragraph {
     font-size: 18px;
     line-height: 172.35%;
-    /* or 31px */
     letter-spacing: 0.04em;
     margin-left: 20px;
 }
@@ -592,6 +590,19 @@ form textarea {
     box-sizing: border-box;
 }
 
+#hero i:hover {
+    cursor: pointer;
+    background-color: var(--main-orange);
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+#hero .fa-github:hover {
+    color: var(--main-orange);
+    background-color: #fff;
+    transition: all 1s ease-in-out;
+}
+
 .tile-1:hover .portfolio-layer,
 .tile-2:hover .portfolio-layer,
 .tile-3:hover .portfolio-layer,
@@ -600,7 +611,8 @@ form textarea {
     display: block;
 }
 
-.portfolio-btn:hover {
+.portfolio-btn:hover,
+#form-panel .btn:hover {
     background: #fff;
     color: var(--main-orange);
     border: solid 2px var(--main-orange);
@@ -609,6 +621,10 @@ form textarea {
 #navbar ul li a:hover {
     animation: navanimation 3s infinite;
     text-decoration: underline;
+}
+
+#socials .fab:hover {
+    cursor: pointer;
 }
 
 /* MEDIA QUERIES */
@@ -681,6 +697,7 @@ form textarea {
     }
 
     /* about me */
+
     #about-me,
     #about-front-rectangle,
     #about-back-rectangle {
@@ -727,6 +744,7 @@ form textarea {
     }
 
     /* skills */
+
     #skills {
         width: 85%;
         margin: 10px auto;
@@ -862,6 +880,7 @@ form textarea {
     }
 
     /* footer */
+
     #footer-pagebottom {
         margin: 25px auto;
     }
@@ -902,6 +921,7 @@ form textarea {
     }
 
     /* about me */
+
     #person-img {
         width: 80px;
         height: 80px;
@@ -947,6 +967,7 @@ form textarea {
     }
 
     /* portfolio */
+
     #portfolio-gallery {
         height: auto;
         min-height: 400px;
