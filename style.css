@@ -144,7 +144,9 @@
 
 /* RECTANGLE */
 
-#rectangle {}
+#rectangle {
+    margin-bottom: 50px;
+}
 
 #rectangle p {
     font-size: 36px;
@@ -186,11 +188,14 @@
 
 #about-back-rectangle {
     width: 68%;
-    height: 430px;
+    height: 400px;
     background-color: var(--background-white);
+    position: absolute;
+    top: -70px;
+    z-index: -1;
 }
 
-#about-back-rectangle h3 {
+#about-me h3 {
     font-family: "Ubuntu";
     font-style: normal;
     font-weight: bold;
@@ -199,13 +204,16 @@
     letter-spacing: 0.02em;
     padding-top: 20px;
     padding-left: 150px;
+    margin-bottom: 3%;
+    position: absolute;
+    top: -60px;
 }
 
 #about-front-rectangle {
-    position: absolute;
+    /* position: absolute; */
     top: 75px;
     height: 220px;
-    margin: 0 7.5%;
+    margin: 0 auto;
     width: 85%;
     padding: 30px 50px 30px 50px;
     background-color: #fff;
@@ -251,7 +259,7 @@
 /* SKILLS */
 
 #skills {
-    margin-top: 50px;
+    margin-top: 7%;
     margin-bottom: 50px;
     position: relative;
 }
