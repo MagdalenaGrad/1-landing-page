@@ -20,5 +20,5 @@ https://magdalenagrad.github.io/1-landing-page/
 
 ![Page preview](preview.PNG)  
 
-
+## Thanks for visiting! 
 
