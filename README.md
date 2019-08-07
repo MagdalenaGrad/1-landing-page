@@ -18,6 +18,6 @@ https://magdalenagrad.github.io/1-landing-page/
 
 #### Preview:
 
-[!Page preview](https://github.com/MagdalenaGrad/1-landing-page/blob/master/imgs/preview.PNG?raw=true) 
+[!Page preview](preview.png)  
 
 
