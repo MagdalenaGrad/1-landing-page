@@ -1,10 +1,12 @@
 # Landing Page
 
-Landing page based on a mockup. Created as a first individual project for CodersCamp course. 
+Hi there!
+
+ I created this page as a first individual project for CodersCamp course. It's a simple landing page based on a mockup.
 
 No frameworks or libraries are used in this project - only HTML and CSS.  
 
-**Link to github pages**
+**Link to live version on github pages:**
 
 https://magdalenagrad.github.io/1-landing-page/
 
@@ -14,7 +16,8 @@ https://magdalenagrad.github.io/1-landing-page/
 - HTML5
 - CSS3
 
-#### Preview
+#### Preview:
 
-[!Page preview](imgs/preview.png) 
+[!Page preview] (https://github.com/MagdalenaGrad/1-landing-page/blob/master/imgs/preview.PNG?raw=true)
+
 
