@@ -528,7 +528,6 @@ form legend {
     font-weight: bold;
     font-size: 36px;
     line-height: 172.35%;
-    /* or 62px */
     letter-spacing: 0.04em;
 }
 
@@ -594,6 +593,9 @@ form textarea {
 }
 
 .tile-1:hover .portfolio-layer,
+.tile-2:hover .portfolio-layer,
+.tile-3:hover .portfolio-layer,
+.tile-4:hover .portfolio-layer,
 .tile-5:hover .portfolio-layer {
     display: block;
 }
@@ -613,6 +615,13 @@ form textarea {
 
 /* S */
 @media (max-width: 767px) {
+
+    #about-me h3,
+    #skills h3,
+    #portfolio h3,
+    #contact h3 {
+        font-size: 20px;
+    }
 
     /* nav menu */
 
@@ -638,13 +647,13 @@ form textarea {
 
     /* Hero */
 
-    #hero {
-        height: auto;
+    #hero,
+    #overlay {
+        height: 100%;
     }
 
-    /* FIX IT!!! */
-    #overlay {
-        height: auto;
+    #hero {
+        padding-bottom: 10%;
     }
 
     #hero h1 {
@@ -685,6 +694,12 @@ form textarea {
         width: 100%;
     }
 
+    #about-me h3 {
+        top: 0;
+        position: relative;
+        padding-left: 5%;
+    }
+
     #about-front-rectangle {
         width: 85%;
         margin: 0 auto;
@@ -695,7 +710,8 @@ form textarea {
     }
 
     #about-front-rectangle p {
-        font-size: 16px;
+        font-size: 14px;
+        padding-left: 5%;
     }
 
     #about-paragraph {
@@ -723,6 +739,10 @@ form textarea {
         height: auto;
     }
 
+    #skills h3 {
+        background-color: #fff;
+    }
+
     #skills-front-rectangle {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1.5fr 1fr;
@@ -743,6 +763,7 @@ form textarea {
     }
 
     /* portfolio */
+
     #portfolio-gallery {
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: 1fr 1fr 1fr;
@@ -755,6 +776,7 @@ form textarea {
     }
 
     .portfolio-layer-p {
+        max-width: 90%;
         font-size: 12px;
     }
 
@@ -766,6 +788,7 @@ form textarea {
         width: 50px;
         height: 25px;
         border-radius: 8px;
+        margin-bottom: 5px;
     }
 
     .tile-1 {
@@ -801,6 +824,11 @@ form textarea {
         box-sizing: border-box;
     }
 
+    #contact h3 {
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
     #contact-form {
         flex-direction: column;
         margin-bottom: 0px;
@@ -817,6 +845,12 @@ form textarea {
 
     #form-info::after {
         display: none;
+    }
+
+    #please-describe {
+        width: 85%;
+        line-height: 120%;
+        padding-bottom: 20px;
     }
 
     form input {
@@ -836,7 +870,27 @@ form textarea {
 /* M */
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+    /* hero */
+
+    #hero {
+        padding-bottom: 10%;
+    }
+
+    #hero,
+    #overlay {
+        height: 100%;
+    }
+
+    #hero h1 {
+        font-size: 72px;
+    }
+
     /* rec */
+
+    #rectangle {
+        margin-bottom: 10%;
+    }
 
     #rectangle p {
         font-size: 24px;
