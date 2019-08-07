@@ -18,6 +18,7 @@ https://magdalenagrad.github.io/1-landing-page/
 
 #### Preview:
 
-[!Page preview](preview.png)  
+![Page preview](preview.png)  
+
 
 
